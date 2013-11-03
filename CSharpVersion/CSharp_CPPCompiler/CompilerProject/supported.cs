@@ -587,6 +587,12 @@ namespace System
                 //    public bool MoveNext();
                 //}
             }
+            
+            public class KeyValuePair<TKey, TValue> : Object {
+            	public TKey Key { get{} }
+            	public TValue Value { get{} }
+            	public KeyValuePair(TKey key, TValue value) {}
+            }
 			
 			public class KeyNotFoundException : Exception { }
 		}
