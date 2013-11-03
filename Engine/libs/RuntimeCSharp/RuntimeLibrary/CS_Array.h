@@ -126,7 +126,6 @@ namespace System {
 /*x*/	static AbstractArray*	CreateInstance			(Type elementType, s32 length1, s32 length2);
 /*x*/	static AbstractArray*	CreateInstance			(Type elementType, Array<s32>* lengths, Array<s32>* lowerBounds);
 /*x*/	static AbstractArray*	CreateInstance			(Type elementType, s32 length1, s32 length2, s32 length3);
-/*x*/	//IEnumerator			GetEnumerator			();
 /*NO*/	//Object*				GetValue				(s64 index);
 /*NO*/	//Object*				GetValue				(s32 index1, s32 index2);
 /*NO*/	//Object*				GetValue				(s64 index1, s64 index2);
@@ -272,19 +271,6 @@ namespace System {
 		template<class T> static s32				_valueType_BinarySearch	(Array<T>* _array, s32 index, s32 length, T value);
 		template<class T> static void				_valueType_Sort			(Array<T>* _array);
 		template<class T> static void				_valueType_Sort			(Array<T>* _array, s32 index, s32 length);
-
-		template<class T>
-		class Enumerator : public Collections::Generic::IEnumerator<T> {
-		private:
-			T* m_array;
-			u64 m_length;
-			s64 m_nextIndex;
-		public:
-			Enumerator(AbstractArray* theArray);
-			T _acc_gCurrent();
-			bool MoveNext();
-			void Dispose();
-		};
 	};
 
 
@@ -322,16 +308,31 @@ namespace System {
 		}
 		inline T				_idx$_s$				(s32 idx, T item)	{ CHCKTHIS; return _idx$_s(idx, item);				}
 		inline Array<T>*		_s						(s32 idx, T item)	{ _array_refSetValue(idx, item); return this;		}
+
+		Object*					Clone					();
+		inline Object*			Clone$					()					{ CHCKTHIS; return Clone();							}
+
 		Collections::Generic::IEnumerator<T>*
 		                        GetEnumerator           ();
 		inline Collections::Generic::IEnumerator<T>*
 		                        GetEnumerator$          ()	                { CHCKTHIS; return GetEnumerator();				    }
-
-		Object*					Clone					();
-		inline Object*			Clone$					()					{ CHCKTHIS; return Clone();							}
 	
 	public: // Internal method.
 		Array<T>										(u32 length, T* _array, u32 arrayLen);
+
+	private:
+		class Enumerator : public Collections::Generic::IEnumerator<T> {
+		private:
+			T* m_array;
+			u64 m_length;
+			u64 m_nextIndex;
+			static const u64 c_uninitialized = 0xFFFFFFFFFFFFFFFF;
+		public:
+			Enumerator(u64 length, void* theArray);
+			T _acc_gCurrent();
+			bool MoveNext();
+			void Dispose();
+		};
 	};
 
 	template<class T>
@@ -573,11 +574,6 @@ namespace System {
 /*x*/	//static s32			FindLastIndex			(Array<T>* _array, s32 startIndex, Predicate<T>* match);
 /*x*/	//static int			FindLastIndex			(Array<T>* _array, s32 startIndex, s32 count, Predicate<T>* match);
 /*x*/	//static void			ForEach					(Array<T>* _array, Action<T> action);
-
-	template<class T>
-	Collections::Generic::IEnumerator<T>* Array<T>::GetEnumerator() {
-		return CS_NEW Enumerator(this);
-	}
 	
 	template<class T>
 	inline s32 AbstractArray::IndexOf(Array<T>* _array, T value) {
@@ -811,31 +807,35 @@ namespace System {
 /*x*/	//static void			Sort					(Array<TKey>* keys, Array<TValue>* items, s32 index, s32 length, IComparer<TKey>* comparer);
 /*x*/	//static bool			TrueForAll				(Array<T>* _array, Predicate<T>* match);
 
+	template<class T>
+	Collections::Generic::IEnumerator<T>* Array<T>::GetEnumerator() {
+		return CS_NEW Enumerator(this->_acc_gLongLength$(), this->m_array);
+	}
 	
 	// -----------------------------------------------------------------------
 	// Enumerator
 	template<class T>
-	AbstractArray::Enumerator<T>::Enumerator(AbstractArray* theArray) {
-		m_nextIndex = -1;
-		m_array = (T*)theArray->m_array;
-		m_length = theArray->m_length;
+	Array<T>::Enumerator::Enumerator(u64 length, void* theArray) {
+		m_nextIndex = c_uninitialized;
+		m_array = (T*)theArray;
+		m_length = length;
 	}
 
 	template<class T>
-	T AbstractArray::Enumerator<T>::_acc_gCurrent() {
-		if(m_nextIndex < 0 || m_nextIndex > m_length) {
+	T Array<T>::Enumerator::_acc_gCurrent() {
+		if(m_nextIndex == c_uninitialized || m_nextIndex > m_length) {
 			THROW(CS_NEW InvalidOperationException());
 		}
 		return m_array[m_nextIndex];
 	}
 
 	template<class T>
-	bool AbstractArray::Enumerator<T>::MoveNext() {
+	bool Array<T>::Enumerator::MoveNext() {
 		return ((++m_nextIndex) < m_length);
 	}
 
 	template<class T>
-	void AbstractArray::Enumerator<T>::Dispose() {
+	void Array<T>::Enumerator::Dispose() {
 		// nop
 	}	
 }

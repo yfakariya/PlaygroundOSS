@@ -35,8 +35,10 @@ namespace Generic {
 		TValue m_value;
 	public:
 		KeyValuePair(TKey key, TValue value);
-		TKey _acc_gKey();
-		TValue _acc_gValue();
+		TKey			_acc_gKey();
+		inline TKey     _acc_gKey$()    { CHCKTHIS; return _acc_gKey();   }
+		TValue          _acc_gValue();
+		inline TValue   _acc_gValue$()  { CHCKTHIS; return _acc_gValue(); }
 	};
 
 	///
@@ -106,9 +108,9 @@ namespace Generic {
 		inline bool						ContainsKey$			(TKey key)							{ CHCKTHIS;  return ContainsKey(key);		}
 		bool							ContainsValue			(TValue value);
 		inline bool						ContainsValue$			(TValue value)						{ CHCKTHIS; return ContainsValue(value);	}
-		IEnumerator<KeyValuePair<TKey,TValue>>*
+		IEnumerator<KeyValuePair<TKey,TValue>*>*
 										GetEnumerator			();
-		inline IEnumerator<KeyValuePair<TKey,TValue>>*
+		inline IEnumerator<KeyValuePair<TKey,TValue>*>*
 										GetEnumerator$			()									{ CHCKTHIS; return GetEnumerator();			}
 /*x*/	//int							GetHashCode				();
 		bool							Remove					(TKey key);
@@ -128,19 +130,39 @@ namespace Generic {
 		void							_display				();
 
 	private:
-		class Enumerator : public IEnumerator<KeyValuePair<TKey,TValue>> {
+		class Enumerator : public IEnumerator<KeyValuePair<TKey,TValue>*> {
 		private:
 			u32 m_capacity;
 			u32 m_currentBucket;
 			s32* m_buckets;
+			Entry* m_entries;
 			Entry* m_currentEntry;
 		public:
 			Enumerator(Dictionary<TKey,TValue>* dict);
-			KeyValuePair<TKey,TValue> _acc_gCurrent();
+			KeyValuePair<TKey,TValue>* _acc_gCurrent();
 			bool MoveNext();
 			void Dispose();
 		};
 	};
+
+	// ------------------------------------------------------
+	// KeyValuePair<TKey, TValue> methods
+	
+	template<class TKey, class TValue>
+	KeyValuePair<TKey,TValue>::KeyValuePair(TKey key, TValue value) {
+		m_key = key;
+		m_value = value;
+	}
+
+	template<class TKey, class TValue>
+	TKey KeyValuePair<TKey,TValue>::_acc_gKey() {
+		return m_key;
+	}
+	
+	template<class TKey, class TValue>
+	TValue KeyValuePair<TKey,TValue>::_acc_gValue() {
+		return m_value;
+	}
 
 	// ------------------------------------------------------
 	// Virtual methods
@@ -728,7 +750,7 @@ namespace Generic {
 	}
 
 	template<class TKey, class TValue>
-	IEnumerator<KeyValuePair<TKey,TValue>>* Dictionary<TKey,TValue>::GetEnumerator() {
+	IEnumerator<KeyValuePair<TKey,TValue>*>* Dictionary<TKey,TValue>::GetEnumerator() {
 		return CS_NEW Enumerator(this);
 	}
 	
@@ -804,22 +826,22 @@ namespace Generic {
 	
 	// -----------------------------------------------------------------------
 	// Enumerator
-
 	template<class TKey, class TValue>
 	Dictionary<TKey, TValue>::Enumerator::Enumerator(Dictionary<TKey, TValue>* dict) {
 		m_capacity = dict->m_capacity;
 		m_buckets = dict->m_buckets;
+		m_entries = dict->m_entries;
 		m_currentBucket = -1;
 		m_currentEntry = NULL;
 	}
 
 	template<class TKey, class TValue>
-	KeyValuePair<TKey, TValue> Dictionary<TKey, TValue>::Enumerator::_acc_gCurrent() {
+	KeyValuePair<TKey, TValue>* Dictionary<TKey, TValue>::Enumerator::_acc_gCurrent() {
 		if(m_currentEntry == NULL) {
 			THROW(CS_NEW InvalidOperationException());
 		}
 
-		return KeyValuePair<TKey,TValue>(m_currentEntry->m_key, m_currentEntry->m_value);
+		return CS_NEW KeyValuePair<TKey,TValue>(m_currentEntry->m_key, m_currentEntry->m_value);
 	}
 
 	template<class TKey, class TValue>
@@ -834,7 +856,7 @@ namespace Generic {
 					return false;
 				}
 
-				m_currentEntry = m_buckets[m_currentBucket];
+				m_currentEntry = m_entries + m_buckets[m_currentBucket];
 				return true;
 			}
 			

@@ -157,9 +157,10 @@ namespace Generic {
 
 		class Enumerator : public IEnumerator<T> {
 		private:
-			List<T>* m_list;
+			T* m_list;
 			u32 m_count;
-			s32 m_nextIndex;
+			u32 m_nextIndex;
+			static const u32 c_uninitialized = 0xFFFFFFFF;
 		public:
 			Enumerator(List<T>* list);
 			T _acc_gCurrent();
@@ -579,7 +580,7 @@ namespace Generic {
 
 	template<class T>
 	IEnumerator<T>* List<T>::GetEnumerator() {
-		return CS_NEW Enumerator<T>(this);			
+		return CS_NEW Enumerator(this);			
 	}
 
 	template<class T>
@@ -811,14 +812,14 @@ namespace Generic {
 	// Enumerator
 	template<class T>
 	List<T>::Enumerator::Enumerator(List<T>* list) {
-		m_nextIndex = -1;
+		m_nextIndex = c_uninitialized;
 		m_list = list->m_list;
 		m_count = list->m_count;
 	}
 
 	template<class T>
 	T List<T>::Enumerator::_acc_gCurrent() {
-		if(m_nextIndex < 0 || m_nextIndex > m_count) {
+		if(m_nextIndex == c_uninitialized || m_nextIndex > m_count) {
 			THROW(CS_NEW InvalidOperationException());
 		}
 		return m_list[m_nextIndex];
