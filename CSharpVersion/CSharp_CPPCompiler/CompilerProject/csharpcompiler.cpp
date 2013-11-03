@@ -518,36 +518,36 @@ static const short yyrline[] = { 0,
    620,   621,   625,   628,   631,   632,   635,   636,   639,   642,
    643,   646,   647,   650,   651,   652,   653,   656,   659,   663,
    667,   674,   675,   678,   679,   682,   683,   686,   687,   690,
-   693,   696,   697,   700,   783,   784,   785,   786,   787,   790,
-   793,   796,   797,   798,   801,   804,   805,   808,   811,   814,
-   817,   823,   824,   827,   830,   833,   834,   837,   840,   843,
-   846,   851,   855,   856,   860,   864,   865,   868,   877,   878,
-   881,   882,   885,   886,   889,   890,   893,   893,   898,   899,
-   908,   909,   912,   913,   917,   920,   921,   924,   925,   928,
-   931,   934,   935,   938,   939,   942,   943,   944,   945,   946,
-   957,   958,   961,   962,   965,   966,   967,   968,   969,   970,
-   971,   972,   973,   974,   975,   976,   977,   978,   979,   983,
-   990,   994,   995,   998,  1001,  1002,  1005,  1008,  1009,  1012,
-  1013,  1016,  1017,  1018,  1019,  1020,  1021,  1022,  1023,  1024,
-  1026,  1029,  1034,  1037,  1050,  1056,  1065,  1066,  1069,  1070,
-  1074,  1075,  1078,  1079,  1082,  1083,  1086,  1087,  1090,  1091,
-  1094,  1102,  1103,  1106,  1107,  1108,  1112,  1120,  1126,  1127,
-  1128,  1131,  1132,  1135,  1136,  1139,  1145,  1151,  1152,  1155,
-  1156,  1162,  1163,  1166,  1172,  1178,  1188,  1190,  1193,  1197,
-  1200,  1201,  1204,  1205,  1208,  1209,  1210,  1211,  1212,  1213,
-  1214,  1215,  1216,  1217,  1218,  1219,  1220,  1221,  1222,  1223,
-  1224,  1225,  1226,  1227,  1228,  1229,  1233,  1234,  1237,  1250,
-  1257,  1258,  1261,  1262,  1278,  1288,  1289,  1292,  1293,  1298,
-  1303,  1306,  1307,  1310,  1313,  1316,  1317,  1320,  1321,  1324,
-  1325,  1326,  1327,  1328,  1329,  1330,  1331,  1333,  1338,  1338,
-  1341,  1342,  1345,  1346,  1350,  1351,  1356,  1360,  1364,  1365,
-  1368,  1371,  1374,  1375,  1378,  1379,  1382,  1383,  1384,  1385,
-  1389,  1399,  1411,  1412,  1415,  1421,  1429,  1430,  1431,  1432,
-  1435,  1440,  1441,  1446,  1448,  1453,  1454,  1457,  1460,  1461,
-  1464,  1465,  1468,  1469,  1472,  1473,  1478,  1484,  1487,  1488,
-  1491,  1493,  1497,  1498,  1501,  1504,  1505,  1506,  1507,  1508,
-  1509,  1510,  1511,  1512,  1515,  1516,  1519,  1522,  1523,  1526,
-  1529,  1536,  1539,  1542,  1545,  1548,  1551
+   693,   696,   697,   700,   790,   791,   792,   793,   794,   797,
+   800,   803,   804,   805,   808,   811,   812,   815,   818,   821,
+   824,   830,   831,   834,   837,   840,   841,   844,   847,   850,
+   853,   858,   862,   863,   867,   871,   872,   875,   884,   885,
+   888,   889,   892,   893,   896,   897,   900,   900,   905,   906,
+   915,   916,   919,   920,   924,   927,   928,   931,   932,   935,
+   938,   941,   942,   945,   946,   949,   950,   951,   952,   953,
+   964,   965,   968,   969,   972,   973,   974,   975,   976,   977,
+   978,   979,   980,   981,   982,   983,   984,   985,   986,   990,
+   997,  1001,  1002,  1005,  1008,  1009,  1012,  1015,  1016,  1019,
+  1020,  1023,  1024,  1025,  1026,  1027,  1028,  1029,  1030,  1031,
+  1033,  1036,  1041,  1044,  1057,  1063,  1072,  1073,  1076,  1077,
+  1081,  1082,  1085,  1086,  1089,  1090,  1093,  1094,  1097,  1098,
+  1101,  1109,  1110,  1113,  1114,  1115,  1119,  1127,  1133,  1134,
+  1135,  1138,  1139,  1142,  1143,  1146,  1152,  1158,  1159,  1162,
+  1163,  1169,  1170,  1173,  1179,  1185,  1195,  1197,  1200,  1204,
+  1207,  1208,  1211,  1212,  1215,  1216,  1217,  1218,  1219,  1220,
+  1221,  1222,  1223,  1224,  1225,  1226,  1227,  1228,  1229,  1230,
+  1231,  1232,  1233,  1234,  1235,  1236,  1240,  1241,  1244,  1257,
+  1264,  1265,  1268,  1269,  1285,  1295,  1296,  1299,  1300,  1305,
+  1310,  1313,  1314,  1317,  1320,  1323,  1324,  1327,  1328,  1331,
+  1332,  1333,  1334,  1335,  1336,  1337,  1338,  1340,  1345,  1345,
+  1348,  1349,  1352,  1353,  1357,  1358,  1363,  1367,  1371,  1372,
+  1375,  1378,  1381,  1382,  1385,  1386,  1389,  1390,  1391,  1392,
+  1396,  1406,  1418,  1419,  1422,  1428,  1436,  1437,  1438,  1439,
+  1442,  1447,  1448,  1453,  1455,  1460,  1461,  1464,  1467,  1468,
+  1471,  1472,  1475,  1476,  1479,  1480,  1485,  1491,  1494,  1495,
+  1498,  1500,  1504,  1505,  1508,  1511,  1512,  1513,  1514,  1515,
+  1516,  1517,  1518,  1519,  1522,  1523,  1526,  1529,  1530,  1533,
+  1536,  1543,  1546,  1549,  1552,  1555,  1558
 };
 
 static const char * const yytname[] = {   "$","error","$undefined.","THEN","ELSE",
@@ -3132,401 +3132,408 @@ case 264:
 													CreateStatement(STM_TRY, NULL, NULL)
 													->addChild(
 														CreateStatement(
-															STM_WHILE, 
-															NULL, 
+															STM_BLOCK,
+															NULL,
+															CreateStatement(
+																STM_WHILE, 
+																NULL, 
+																CreateStatement(
+																	STM_BLOCK,
+																	NULL,
+																	CreateVarStatement(
+																		STM_LOCALVAR,
+																		yyvsp[0].statement, // next
+																		NULL, // child
+																		CreateVarInstance(
+																			yyvsp[-4].text
+																		)->setInitializer(
+																			CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Current")
+																		),
+																		yyvsp[-5].type
+																	)
+																)
+															) -> setExpression(
+																/* enumerator.MoveNext() */
+																CreateDoubleExpr(
+																	EXPR_INVOKE,
+																	CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("MoveNext"),
+																	NULL // no args
+																)->patchSubInvoke()
+															)
+														)
+													) -> addNext (
+														CreateStatement(STM_FINALLY, NULL, NULL)
+														->addChild(
 															CreateStatement(
 																STM_BLOCK,
 																NULL,
-																CreateVarStatement(
-																	STM_LOCALVAR,
-																	yyvsp[0].statement, // next
-																	NULL, // child
-																	CreateVarInstance(
-																		yyvsp[-4].text
-																	)->setInitializer(
-																		CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Current")
-																	),
-																	yyvsp[-5].type
+																CreateStatement(STM_WRAP_EXP, NULL, NULL) -> setExpression(
+																	/* enumerator.Dispose() */
+																	CreateDoubleExpr(
+																		EXPR_INVOKE,
+																		CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Dispose"),
+																		NULL // no args
+																	)->patchSubInvoke()
 																)
 															)
-														) -> setExpression(
-															/* enumerator.MoveNext() */
-															CreateDoubleExpr(
-																EXPR_INVOKE,
-																CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("MoveNext"),
-																NULL // no args
-															)->patchSubInvoke()
-														)
-													)
-												) -> addNext (
-													CreateStatement(
-														STM_FINALLY, 
-														NULL,
-														CreateStatement(STM_WRAP_EXP, NULL, NULL) -> setExpression(
-															/* enumerator.Dispose() */
-															CreateDoubleExpr(
-																EXPR_INVOKE,
-																CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Dispose"),
-																NULL // no args
-															)->patchSubInvoke()
 														)
 													)
 												);
 										;
     break;}
 case 265:
-#line 783 "csharp.y"
+#line 790 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; ;
     break;}
 case 266:
-#line 784 "csharp.y"
+#line 791 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; ;
     break;}
 case 267:
-#line 785 "csharp.y"
+#line 792 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; ;
     break;}
 case 268:
-#line 786 "csharp.y"
+#line 793 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; ;
     break;}
 case 269:
-#line 787 "csharp.y"
+#line 794 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; ;
     break;}
 case 270:
-#line 790 "csharp.y"
+#line 797 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_BREAK, NULL, NULL); ;
     break;}
 case 271:
-#line 793 "csharp.y"
+#line 800 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_CONTINUE, NULL, NULL); ;
     break;}
 case 272:
-#line 796 "csharp.y"
+#line 803 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_GOTO, NULL,NULL)->addLabel(yyvsp[-1].text);	;
     break;}
 case 273:
-#line 797 "csharp.y"
+#line 804 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_GOTOCASE, NULL, NULL)->setExpression(yyvsp[-1].expr); ;
     break;}
 case 274:
-#line 798 "csharp.y"
+#line 805 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_GOTODEFAULT, NULL,NULL); ;
     break;}
 case 275:
-#line 801 "csharp.y"
+#line 808 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_RETURN, NULL, NULL)->setExpression(yyvsp[-1].expr); ;
     break;}
 case 276:
-#line 804 "csharp.y"
+#line 811 "csharp.y"
 { R(); yyval.expr = NULL; 		;
     break;}
 case 277:
-#line 805 "csharp.y"
+#line 812 "csharp.y"
 { R(); yyval.expr = yyvsp[0].expr; 	;
     break;}
 case 278:
-#line 808 "csharp.y"
+#line 815 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_THROW, NULL, NULL)->setExpression(yyvsp[-1].expr); ;
     break;}
 case 279:
-#line 811 "csharp.y"
+#line 818 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_TRY, NULL, NULL)
 											->addChild(yyvsp[-1].statement)->addNext(yyvsp[0].statement); 
 										;
     break;}
 case 280:
-#line 814 "csharp.y"
+#line 821 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_TRY, NULL, NULL)
 											->addChild(yyvsp[-1].statement)->addNext(yyvsp[0].statement);
 										;
     break;}
 case 281:
-#line 818 "csharp.y"
+#line 825 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_TRY, NULL, NULL)
 											->addChild(yyvsp[-2].statement)->addNext(yyvsp[-1].statement)->addNext(yyvsp[0].statement);
 										;
     break;}
 case 282:
-#line 823 "csharp.y"
+#line 830 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; ;
     break;}
 case 283:
-#line 824 "csharp.y"
+#line 831 "csharp.y"
 { R(); yyval.statement = yyvsp[-1].statement->addNext(yyvsp[0].statement); ;
     break;}
 case 284:
-#line 827 "csharp.y"
+#line 834 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_CATCH, NULL, NULL)
 														->addChild(yyvsp[0].statement)->addLabel(yyvsp[-2].text)->addType(yyvsp[-3].type); 
 													;
     break;}
 case 285:
-#line 830 "csharp.y"
+#line 837 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_CATCH, NULL, NULL)->addChild(yyvsp[0].statement); ;
     break;}
 case 286:
-#line 833 "csharp.y"
+#line 840 "csharp.y"
 { R(); yyval.text = NULL; ;
     break;}
 case 287:
-#line 834 "csharp.y"
+#line 841 "csharp.y"
 { R(); yyval.text = yyvsp[0].text; ;
     break;}
 case 288:
-#line 837 "csharp.y"
+#line 844 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_FINALLY, NULL, NULL)->addChild(yyvsp[0].statement); ;
     break;}
 case 289:
-#line 840 "csharp.y"
+#line 847 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED,"Unsupported 'checked' statement"); yyval.statement = CreateStatement(STM_CHECKED, NULL, NULL)->addChild(yyvsp[0].statement); ;
     break;}
 case 290:
-#line 843 "csharp.y"
+#line 850 "csharp.y"
 { R(); yyval.statement = CreateStatement(STM_UNCHECKED, NULL, NULL)->addChild(yyvsp[0].statement); ;
     break;}
 case 291:
-#line 846 "csharp.y"
+#line 853 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED,"Unsupported 'lock' statement"); yyval.statement = CreateStatement(STM_LOCK, NULL, NULL)
 														->addChild(yyvsp[0].statement)->setExpression(yyvsp[-2].expr);
 													;
     break;}
 case 292:
-#line 852 "csharp.y"
+#line 859 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED_YET,"Unsupported 'using' statement"); yyval.statement = CreateStatement(STM_USING, NULL, NULL)->addChild(yyvsp[-2].statement)->addChild(yyvsp[0].statement); ;
     break;}
 case 293:
-#line 855 "csharp.y"
+#line 862 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement ;
     break;}
 case 294:
-#line 856 "csharp.y"
+#line 863 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement ;
     break;}
 case 295:
-#line 861 "csharp.y"
+#line 868 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED_YET,"FIXED not supported."); ;
     break;}
 case 296:
-#line 864 "csharp.y"
+#line 871 "csharp.y"
 { R(); /* When FIXED Support */ ;
     break;}
 case 297:
-#line 865 "csharp.y"
+#line 872 "csharp.y"
 { R(); /* When FIXED Support */ ;
     break;}
 case 298:
-#line 868 "csharp.y"
+#line 875 "csharp.y"
 { R(); /* When FIXED Support */ ;
     break;}
 case 299:
-#line 877 "csharp.y"
+#line 884 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 300:
-#line 878 "csharp.y"
+#line 885 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 301:
-#line 881 "csharp.y"
+#line 888 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 302:
-#line 882 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 303:
-#line 885 "csharp.y"
-{ R(); yyval.attribute = NULL; ;
-    break;}
-case 304:
-#line 886 "csharp.y"
-{ R(); yyval.attribute = yyvsp[0].attribute; ;
-    break;}
-case 305:
 #line 889 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
+case 303:
+#line 892 "csharp.y"
+{ R(); yyval.attribute = NULL; ;
+    break;}
+case 304:
+#line 893 "csharp.y"
+{ R(); yyval.attribute = yyvsp[0].attribute; ;
+    break;}
+case 305:
+#line 896 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
 case 306:
-#line 890 "csharp.y"
+#line 897 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 307:
-#line 893 "csharp.y"
+#line 900 "csharp.y"
 { R(); useOrCreateNameSpace(yyvsp[-2].attribute, yyvsp[0].text); ;
     break;}
 case 308:
-#line 894 "csharp.y"
+#line 901 "csharp.y"
 { R();	// Unstack.
 										unuseNameSpace();		;
     break;}
 case 309:
-#line 898 "csharp.y"
+#line 905 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 310:
-#line 899 "csharp.y"
+#line 906 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 311:
-#line 908 "csharp.y"
+#line 915 "csharp.y"
 { R(); yyval.text = yyvsp[0].text; 	display(yyvsp[0].text);		;
     break;}
 case 312:
-#line 909 "csharp.y"
+#line 916 "csharp.y"
 { R(); yyval.text = concat2(yyvsp[-1].text, yyvsp[0].text); 		;
     break;}
 case 313:
-#line 912 "csharp.y"
+#line 919 "csharp.y"
 { R(); yyval.text = concat2(yyvsp[-1].text, "."); 			;
     break;}
 case 314:
-#line 913 "csharp.y"
+#line 920 "csharp.y"
 { R(); yyval.text = concat3(yyvsp[-2].text, yyvsp[-1].text, "."); 	;
     break;}
 case 315:
-#line 917 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 316:
-#line 920 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 317:
-#line 921 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 318:
 #line 924 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
+case 316:
+#line 927 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
+case 317:
+#line 928 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
+case 318:
+#line 931 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
 case 319:
-#line 925 "csharp.y"
+#line 932 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 320:
-#line 928 "csharp.y"
+#line 935 "csharp.y"
 { R(); createAlias(yyvsp[-3].text, yyvsp[-1].text); 	;
     break;}
 case 321:
-#line 931 "csharp.y"
+#line 938 "csharp.y"
 { R(); addUsingNameSpace(yyvsp[-1].text); 		;
     break;}
 case 322:
-#line 934 "csharp.y"
+#line 941 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
 case 323:
-#line 935 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 324:
-#line 938 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 325:
-#line 939 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 326:
 #line 942 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
-case 327:
-#line 943 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 328:
-#line 944 "csharp.y"
-{ R(); /* Nothing to do here */ ;
-    break;}
-case 329:
+case 324:
 #line 945 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
-case 330:
+case 325:
 #line 946 "csharp.y"
 { R(); /* Nothing to do here */ ;
     break;}
+case 326:
+#line 949 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
+case 327:
+#line 950 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
+case 328:
+#line 951 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
+case 329:
+#line 952 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
+case 330:
+#line 953 "csharp.y"
+{ R(); /* Nothing to do here */ ;
+    break;}
 case 331:
-#line 957 "csharp.y"
+#line 964 "csharp.y"
 { R(); yyval.tmpValue = 0;				;
     break;}
 case 332:
-#line 958 "csharp.y"
+#line 965 "csharp.y"
 { R(); yyval.tmpValue = yyvsp[0].tmpValue; 	;
     break;}
 case 333:
-#line 961 "csharp.y"
+#line 968 "csharp.y"
 { R(); yyval.tmpValue = yyvsp[0].tmpValue; 				;
     break;}
 case 334:
-#line 962 "csharp.y"
+#line 969 "csharp.y"
 { R(); yyval.tmpValue = yyvsp[0].tmpValue | yyvsp[-1].tmpValue; 	;
     break;}
 case 335:
-#line 965 "csharp.y"
+#line 972 "csharp.y"
 { R(); yyval.tmpValue = ATT_ABSTRACT;	;
     break;}
 case 336:
-#line 966 "csharp.y"
+#line 973 "csharp.y"
 { R(); yyval.tmpValue = ATT_EXTERN;		;
     break;}
 case 337:
-#line 967 "csharp.y"
+#line 974 "csharp.y"
 { R(); yyval.tmpValue = ATT_INTERNAL;	;
     break;}
 case 338:
-#line 968 "csharp.y"
+#line 975 "csharp.y"
 { R(); yyval.tmpValue = ATT_NEW;		;
     break;}
 case 339:
-#line 969 "csharp.y"
+#line 976 "csharp.y"
 { R(); yyval.tmpValue = ATT_VIRTUAL;	;
     break;}
 case 340:
-#line 970 "csharp.y"
+#line 977 "csharp.y"
 { R(); yyval.tmpValue = ATT_PRIVATE;	;
     break;}
 case 341:
-#line 971 "csharp.y"
+#line 978 "csharp.y"
 { R(); yyval.tmpValue = ATT_PROTECTED;	;
     break;}
 case 342:
-#line 972 "csharp.y"
+#line 979 "csharp.y"
 { R(); yyval.tmpValue = ATT_PUBLIC;		;
     break;}
 case 343:
-#line 973 "csharp.y"
+#line 980 "csharp.y"
 { R(); yyval.tmpValue = ATT_READONLY;	;
     break;}
 case 344:
-#line 974 "csharp.y"
+#line 981 "csharp.y"
 { R(); yyval.tmpValue = ATT_SEALED;		;
     break;}
 case 345:
-#line 975 "csharp.y"
+#line 982 "csharp.y"
 { R(); yyval.tmpValue = ATT_STATIC;		;
     break;}
 case 346:
-#line 976 "csharp.y"
+#line 983 "csharp.y"
 { R(); yyval.tmpValue = ATT_UNSAFE;		;
     break;}
 case 347:
-#line 977 "csharp.y"
+#line 984 "csharp.y"
 { R(); yyval.tmpValue = ATT_VIRTUAL;	;
     break;}
 case 348:
-#line 978 "csharp.y"
+#line 985 "csharp.y"
 { R(); yyval.tmpValue = ATT_VOLATILE;	;
     break;}
 case 349:
-#line 979 "csharp.y"
+#line 986 "csharp.y"
 { R(); yyval.tmpValue = ATT_PARTIAL;	;
     break;}
 case 350:
-#line 984 "csharp.y"
+#line 991 "csharp.y"
 { R();
 		gCurrentAC = CreateClass(	yyvsp[-4].attribute, 
 						yyvsp[-3].tmpValue, 
@@ -3536,101 +3543,101 @@ case 350:
 	;
     break;}
 case 351:
-#line 990 "csharp.y"
+#line 997 "csharp.y"
 { R(); unuseNameSpace(); ;
     break;}
 case 352:
-#line 994 "csharp.y"
+#line 1001 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
 case 353:
-#line 995 "csharp.y"
+#line 1002 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
 case 354:
-#line 998 "csharp.y"
+#line 1005 "csharp.y"
 { R(); /* Do nothing */						;
     break;}
 case 355:
-#line 1001 "csharp.y"
+#line 1008 "csharp.y"
 { R(); gCurrentAC->addInheritance(yyvsp[0].type);	;
     break;}
 case 356:
-#line 1002 "csharp.y"
+#line 1009 "csharp.y"
 { R(); gCurrentAC->addInheritance(yyvsp[0].type);	;
     break;}
 case 357:
-#line 1005 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 358:
-#line 1008 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 359:
-#line 1009 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 360:
 #line 1012 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 361:
-#line 1013 "csharp.y"
+case 358:
+#line 1015 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 362:
+case 359:
 #line 1016 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 363:
-#line 1017 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 364:
-#line 1018 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 365:
+case 360:
 #line 1019 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 366:
+case 361:
 #line 1020 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 367:
-#line 1021 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 368:
-#line 1022 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 369:
+case 362:
 #line 1023 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 370:
+case 363:
 #line 1024 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 371:
+case 364:
+#line 1025 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 365:
 #line 1026 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 372:
+case 366:
+#line 1027 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 367:
+#line 1028 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 368:
 #line 1029 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 369:
+#line 1030 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 370:
+#line 1031 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 371:
+#line 1033 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 372:
+#line 1036 "csharp.y"
 { R();
 																			// Trick : CONST C# is STATIC member in C++ to match C# behavior.
 																			gCurrentAC->addVariable(yyvsp[-5].attribute, (yyvsp[-4].tmpValue & ~ATT_CONST) | ATT_STATIC, yyvsp[-2].type, yyvsp[-1].variable );	;
     break;}
 case 373:
-#line 1034 "csharp.y"
+#line 1041 "csharp.y"
 { R(); gCurrentAC->addVariable(yyvsp[-4].attribute, yyvsp[-3].tmpValue, yyvsp[-2].type, yyvsp[-1].variable );				;
     break;}
 case 374:
-#line 1037 "csharp.y"
+#line 1044 "csharp.y"
 { R(); gCurrentMethod = gCurrentAC->addMethod(
 																			yyvsp[-1].attribute,	// Attributes
 																			yyvsp[-1].tmpValue,	// Modified REF/OUT
@@ -3643,7 +3650,7 @@ case 374:
 																		;
     break;}
 case 375:
-#line 1051 "csharp.y"
+#line 1058 "csharp.y"
 { R(); 	yyval.attribute 	= yyvsp[-7].attribute; 
 		yyval.tmpValue  	= yyvsp[-6].tmpValue;
 		yyval.text			= yyvsp[-4].text;
@@ -3651,7 +3658,7 @@ case 375:
 		yyval.type			= yyvsp[-5].type;								;
     break;}
 case 376:
-#line 1057 "csharp.y"
+#line 1064 "csharp.y"
 { R(); 	yyval.attribute 	= yyvsp[-7].attribute; 
 		yyval.tmpValue  	= yyvsp[-6].tmpValue;
 		yyval.text			= yyvsp[-4].text;
@@ -3659,63 +3666,63 @@ case 376:
 		yyval.type			= TypeObject::getTypeObject(TYPE_VOID);	;
     break;}
 case 377:
-#line 1065 "csharp.y"
+#line 1072 "csharp.y"
 { R(); addGenericName(yyvsp[0].text); 	;
     break;}
 case 378:
-#line 1066 "csharp.y"
+#line 1073 "csharp.y"
 { R(); addGenericName(yyvsp[0].text);		;
     break;}
 case 379:
-#line 1069 "csharp.y"
+#line 1076 "csharp.y"
 { R(); ;
     break;}
 case 380:
-#line 1070 "csharp.y"
+#line 1077 "csharp.y"
 { R(); ;
     break;}
 case 381:
-#line 1074 "csharp.y"
+#line 1081 "csharp.y"
 { R(); yyval.variable = NULL;								;
     break;}
 case 382:
-#line 1075 "csharp.y"
+#line 1082 "csharp.y"
 { R(); yyval.variable = yyvsp[0].variable;						;
     break;}
 case 383:
-#line 1078 "csharp.y"
+#line 1085 "csharp.y"
 { R(); yyval.type = yyvsp[0].type;								;
     break;}
 case 384:
-#line 1079 "csharp.y"
+#line 1086 "csharp.y"
 { R(); yyval.type = TypeObject::getTypeObject(TYPE_VOID);	;
     break;}
 case 385:
-#line 1082 "csharp.y"
+#line 1089 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement;						;
     break;}
 case 386:
-#line 1083 "csharp.y"
+#line 1090 "csharp.y"
 { R(); yyval.statement = NULL;								;
     break;}
 case 387:
-#line 1086 "csharp.y"
+#line 1093 "csharp.y"
 { R(); yyval.variable = yyvsp[0].variable;							;
     break;}
 case 388:
-#line 1087 "csharp.y"
+#line 1094 "csharp.y"
 { R(); yyval.variable = yyvsp[-2].variable->addVariable(yyvsp[0].variable);	;
     break;}
 case 389:
-#line 1090 "csharp.y"
+#line 1097 "csharp.y"
 { R(); yyval.variable = yyvsp[0].variable ;						;
     break;}
 case 390:
-#line 1091 "csharp.y"
+#line 1098 "csharp.y"
 { R(); yyval.variable = yyvsp[0].variable ;						;
     break;}
 case 391:
-#line 1095 "csharp.y"
+#line 1102 "csharp.y"
 { R(); yyval.variable = CreateVarInstance(yyvsp[-1].text)
 														->setAttribute(yyvsp[-4].attribute)
 														->setModifier(yyvsp[-3].tmpValue)
@@ -3723,27 +3730,27 @@ case 391:
 														->setInitializer(yyvsp[0].expr);							;
     break;}
 case 392:
-#line 1102 "csharp.y"
+#line 1109 "csharp.y"
 { R();  yyval.expr		= NULL;								;
     break;}
 case 393:
-#line 1103 "csharp.y"
+#line 1110 "csharp.y"
 { R();  yyval.expr		= yyvsp[0].expr;							;
     break;}
 case 394:
-#line 1106 "csharp.y"
+#line 1113 "csharp.y"
 { R();	yyval.tmpValue	= 0;								;
     break;}
 case 395:
-#line 1107 "csharp.y"
+#line 1114 "csharp.y"
 { R();	yyval.tmpValue = ATT_REF;							;
     break;}
 case 396:
-#line 1108 "csharp.y"
+#line 1115 "csharp.y"
 { R();	yyval.tmpValue	= ATT_REF;							;
     break;}
 case 397:
-#line 1112 "csharp.y"
+#line 1119 "csharp.y"
 { R(); yyval.variable = CreateVarInstance(yyvsp[0].text)
 														->setType(yyvsp[-1].type)
 														->setAttribute(yyvsp[-3].attribute)
@@ -3752,214 +3759,214 @@ case 397:
 													;
     break;}
 case 398:
-#line 1123 "csharp.y"
+#line 1130 "csharp.y"
 { R(); gCurrentAC->addProperty(yyvsp[-8].attribute, yyvsp[-7].tmpValue, yyvsp[-6].type, yyvsp[-5].text, yyvsp[-2].accessor);	;
     break;}
 case 399:
-#line 1126 "csharp.y"
+#line 1133 "csharp.y"
 { R(); yyval.accessor = CreateAccessor(yyvsp[-1].accessor, yyvsp[0].accessor);	;
     break;}
 case 400:
-#line 1127 "csharp.y"
+#line 1134 "csharp.y"
 { R(); yyval.accessor = CreateAccessor(yyvsp[0].accessor, yyvsp[-1].accessor);	;
     break;}
 case 401:
-#line 1128 "csharp.y"
+#line 1135 "csharp.y"
 { R(); yyval.accessor = CreateAccessor((Accessor*)NULL,(Accessor*)NULL); ;
     break;}
 case 402:
-#line 1131 "csharp.y"
+#line 1138 "csharp.y"
 { R(); yyval.accessor = NULL;			;
     break;}
 case 403:
-#line 1132 "csharp.y"
+#line 1139 "csharp.y"
 { R(); yyval.accessor = yyvsp[0].accessor;	;
     break;}
 case 404:
-#line 1135 "csharp.y"
+#line 1142 "csharp.y"
 { R(); yyval.accessor = NULL;			;
     break;}
 case 405:
-#line 1136 "csharp.y"
+#line 1143 "csharp.y"
 { R(); yyval.accessor = yyvsp[0].accessor;	;
     break;}
 case 406:
-#line 1142 "csharp.y"
+#line 1149 "csharp.y"
 { R(); yyval.accessor  = CreateAccessor(yyvsp[-4].attribute, yyvsp[-1].statement);	;
     break;}
 case 407:
-#line 1148 "csharp.y"
+#line 1155 "csharp.y"
 { R(); yyval.accessor  = CreateAccessor(yyvsp[-4].attribute, yyvsp[-1].statement);	;
     break;}
 case 408:
-#line 1151 "csharp.y"
+#line 1158 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement; 	;
     break;}
 case 409:
-#line 1152 "csharp.y"
+#line 1159 "csharp.y"
 { R(); yyval.statement = NULL;			;
     break;}
 case 410:
-#line 1155 "csharp.y"
-{ R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
-    break;}
-case 411:
-#line 1159 "csharp.y"
-{ R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
-    break;}
-case 412:
 #line 1162 "csharp.y"
 { R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
     break;}
-case 413:
-#line 1163 "csharp.y"
+case 411:
+#line 1166 "csharp.y"
 { R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
     break;}
-case 414:
+case 412:
 #line 1169 "csharp.y"
 { R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
     break;}
+case 413:
+#line 1170 "csharp.y"
+{ R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
+    break;}
+case 414:
+#line 1176 "csharp.y"
+{ R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
+    break;}
 case 415:
-#line 1175 "csharp.y"
+#line 1182 "csharp.y"
 { R();	compilerError(ERR_NOT_SUPPORTED,"event not supported");	;
     break;}
 case 416:
-#line 1182 "csharp.y"
+#line 1189 "csharp.y"
 {	R();
 		yyvsp[-2].accessor->setAsIndexer(yyvsp[-5].type, yyvsp[-5].variable);
 		gCurrentAC->addProperty(yyvsp[-7].attribute, yyvsp[-6].tmpValue, yyvsp[-2].accessor);
 	;
     break;}
 case 417:
-#line 1188 "csharp.y"
+#line 1195 "csharp.y"
 { R(); yyval.variable  = yyvsp[-1].variable; yyval.type = yyvsp[-4].type; ;
     break;}
 case 418:
-#line 1190 "csharp.y"
+#line 1197 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED_YET,"Explicit implementation of an interface indexer is not supported yet"); ;
     break;}
 case 419:
-#line 1193 "csharp.y"
+#line 1200 "csharp.y"
 { R(); yyval.text = concat2(yyvsp[-1].text, "this"); ;
     break;}
 case 420:
-#line 1197 "csharp.y"
+#line 1204 "csharp.y"
 { R(); /* TODO When support operator */	;
     break;}
 case 421:
-#line 1200 "csharp.y"
+#line 1207 "csharp.y"
 { R(); /* TODO When support operator */	;
     break;}
 case 422:
-#line 1201 "csharp.y"
+#line 1208 "csharp.y"
 { R(); /* TODO When support operator */	;
     break;}
 case 423:
-#line 1204 "csharp.y"
+#line 1211 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED_YET,"Overloading operator not supported."); ;
     break;}
 case 424:
-#line 1205 "csharp.y"
+#line 1212 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED_YET,"Overloading operator not supported."); ;
     break;}
 case 425:
-#line 1208 "csharp.y"
+#line 1215 "csharp.y"
 { R(); yyval.tmpValue = OP_PLUS;  ;
     break;}
 case 426:
-#line 1209 "csharp.y"
+#line 1216 "csharp.y"
 { R(); yyval.tmpValue = OP_MINUS; ;
     break;}
 case 427:
-#line 1210 "csharp.y"
+#line 1217 "csharp.y"
 { R(); yyval.tmpValue = OP_LNOT;  ;
     break;}
 case 428:
-#line 1211 "csharp.y"
+#line 1218 "csharp.y"
 { R(); yyval.tmpValue = OP_NOT;   ;
     break;}
 case 429:
-#line 1212 "csharp.y"
+#line 1219 "csharp.y"
 { R(); yyval.tmpValue = OP_PLUSPLUS;   ;
     break;}
 case 430:
-#line 1213 "csharp.y"
+#line 1220 "csharp.y"
 { R(); yyval.tmpValue = OP_MINUSMINUS; ;
     break;}
 case 431:
-#line 1214 "csharp.y"
+#line 1221 "csharp.y"
 { R(); yyval.tmpValue = OP_TRUE;  ;
     break;}
 case 432:
-#line 1215 "csharp.y"
+#line 1222 "csharp.y"
 { R(); yyval.tmpValue = OP_FALSE; ;
     break;}
 case 433:
-#line 1216 "csharp.y"
+#line 1223 "csharp.y"
 { R(); yyval.tmpValue = OP_MULT;  ;
     break;}
 case 434:
-#line 1217 "csharp.y"
+#line 1224 "csharp.y"
 { R(); yyval.tmpValue = OP_DIV;   ;
     break;}
 case 435:
-#line 1218 "csharp.y"
+#line 1225 "csharp.y"
 { R(); yyval.tmpValue = OP_MOD;   ;
     break;}
 case 436:
-#line 1219 "csharp.y"
+#line 1226 "csharp.y"
 { R(); yyval.tmpValue = OP_AND;   ;
     break;}
 case 437:
-#line 1220 "csharp.y"
+#line 1227 "csharp.y"
 { R(); yyval.tmpValue = OP_OR;    ;
     break;}
 case 438:
-#line 1221 "csharp.y"
+#line 1228 "csharp.y"
 { R(); yyval.tmpValue = OP_XOR;   ;
     break;}
 case 439:
-#line 1222 "csharp.y"
+#line 1229 "csharp.y"
 { R(); yyval.tmpValue = OP_LSHFT; ;
     break;}
 case 440:
-#line 1223 "csharp.y"
+#line 1230 "csharp.y"
 { R(); yyval.tmpValue = OP_RSHFT; ;
     break;}
 case 441:
-#line 1224 "csharp.y"
+#line 1231 "csharp.y"
 { R(); yyval.tmpValue = OP_EQUAL; ;
     break;}
 case 442:
-#line 1225 "csharp.y"
+#line 1232 "csharp.y"
 { R(); yyval.tmpValue = OP_DIFF;  ;
     break;}
 case 443:
-#line 1226 "csharp.y"
+#line 1233 "csharp.y"
 { R(); yyval.tmpValue = OP_MORE;  ;
     break;}
 case 444:
-#line 1227 "csharp.y"
+#line 1234 "csharp.y"
 { R(); yyval.tmpValue = OP_LESS;  ;
     break;}
 case 445:
-#line 1228 "csharp.y"
+#line 1235 "csharp.y"
 { R(); yyval.tmpValue = OP_MOREEQ;;
     break;}
 case 446:
-#line 1229 "csharp.y"
+#line 1236 "csharp.y"
 { R(); yyval.tmpValue = OP_LESSEQ;;
     break;}
 case 447:
-#line 1233 "csharp.y"
+#line 1240 "csharp.y"
 { R(); /* TODO When support operator */	;
     break;}
 case 448:
-#line 1234 "csharp.y"
+#line 1241 "csharp.y"
 { R(); /* TODO When support operator */	;
     break;}
 case 449:
-#line 1237 "csharp.y"
+#line 1244 "csharp.y"
 { R();
 		gCurrentMethod = gCurrentAC->addConstructor(
 			yyvsp[-3].attribute,	// Attributes
@@ -3973,7 +3980,7 @@ case 449:
 	;
     break;}
 case 450:
-#line 1250 "csharp.y"
+#line 1257 "csharp.y"
 { R(); 	yyval.text		= yyvsp[-4].text; 
 																					yyval.variable = yyvsp[-2].variable; 
 																					yyval.expr		= yyvsp[0].expr; 
@@ -3981,23 +3988,23 @@ case 450:
 																				;
     break;}
 case 451:
-#line 1257 "csharp.y"
+#line 1264 "csharp.y"
 { R(); yyval.expr	= NULL;		yyval.tmpValue = -1;			;
     break;}
 case 452:
-#line 1258 "csharp.y"
+#line 1265 "csharp.y"
 { R(); yyval.expr	= yyvsp[0].expr;	yyval.tmpValue = yyvsp[0].tmpValue;	;
     break;}
 case 453:
-#line 1261 "csharp.y"
+#line 1268 "csharp.y"
 { R(); yyval.expr			= yyvsp[-1].expr;	yyval.tmpValue = 0;	;
     break;}
 case 454:
-#line 1262 "csharp.y"
+#line 1269 "csharp.y"
 { R(); yyval.expr			= yyvsp[-1].expr;	yyval.tmpValue = 1; compilerError(ERR_NOT_SUPPORTED_YET,"'this' access in constructor initialization is not supported yet."); ;
     break;}
 case 455:
-#line 1278 "csharp.y"
+#line 1285 "csharp.y"
 { R();
 		gCurrentMethod = gCurrentAC->addDestructor(
 			yyvsp[-6].attribute,	// Attributes
@@ -4008,23 +4015,23 @@ case 455:
   ;
     break;}
 case 456:
-#line 1288 "csharp.y"
+#line 1295 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement;	;
     break;}
 case 457:
-#line 1289 "csharp.y"
+#line 1296 "csharp.y"
 { R(); yyval.statement = NULL;			;
     break;}
 case 458:
-#line 1292 "csharp.y"
+#line 1299 "csharp.y"
 { R(); yyval.statement = yyvsp[0].statement;	;
     break;}
 case 459:
-#line 1293 "csharp.y"
+#line 1300 "csharp.y"
 { R(); yyval.statement = NULL;			;
     break;}
 case 460:
-#line 1298 "csharp.y"
+#line 1305 "csharp.y"
 { R(); 	gCurrentAC = CreateStruct(	yyvsp[-3].attribute, 
 																					yyvsp[-2].tmpValue, 
 																					yyvsp[0].text
@@ -4032,162 +4039,162 @@ case 460:
 													;
     break;}
 case 461:
-#line 1303 "csharp.y"
+#line 1310 "csharp.y"
 { R(); unuseNameSpace(); ;
     break;}
 case 462:
-#line 1306 "csharp.y"
+#line 1313 "csharp.y"
 { R(); /* Do nothing */ 	;
     break;}
 case 463:
-#line 1307 "csharp.y"
+#line 1314 "csharp.y"
 { R(); /* Do nothing */ 	;
     break;}
 case 464:
-#line 1310 "csharp.y"
+#line 1317 "csharp.y"
 { R(); /* Do nothing */ 	;
     break;}
 case 465:
-#line 1313 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 466:
-#line 1316 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 467:
-#line 1317 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 468:
 #line 1320 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 469:
-#line 1321 "csharp.y"
+case 466:
+#line 1323 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 470:
+case 467:
 #line 1324 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 471:
-#line 1325 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 472:
-#line 1326 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 473:
+case 468:
 #line 1327 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 474:
+case 469:
 #line 1328 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 475:
-#line 1329 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 476:
-#line 1330 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 477:
+case 470:
 #line 1331 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 478:
+case 471:
+#line 1332 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 472:
 #line 1333 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 479:
+case 473:
+#line 1334 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 474:
+#line 1335 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 475:
+#line 1336 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 476:
+#line 1337 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 477:
 #line 1338 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 478:
+#line 1340 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 479:
+#line 1345 "csharp.y"
 { GenerateInitList(); ;
     break;}
 case 480:
-#line 1338 "csharp.y"
+#line 1345 "csharp.y"
 { R(); PopInitList(); yyval.expr = yyvsp[-1].expr; 	;
     break;}
 case 481:
-#line 1341 "csharp.y"
+#line 1348 "csharp.y"
 { R(); yyval.expr = NULL; 			;
     break;}
 case 482:
-#line 1342 "csharp.y"
+#line 1349 "csharp.y"
 { R(); yyval.expr = yyvsp[-1].expr; 		;
     break;}
 case 485:
-#line 1350 "csharp.y"
+#line 1357 "csharp.y"
 { R(); yyval.expr = getInitList()->addExpression(yyvsp[0].expr);	;
     break;}
 case 486:
-#line 1351 "csharp.y"
+#line 1358 "csharp.y"
 { R(); yyval.expr = yyvsp[-2].expr->addExpression(yyvsp[0].expr); 		;
     break;}
 case 487:
-#line 1356 "csharp.y"
+#line 1363 "csharp.y"
 { R(); 	gCurrentAC = CreateInterface(	yyvsp[-3].attribute, 
 																								yyvsp[-2].tmpValue, 
 																								yyvsp[0].text);
 														;
     break;}
 case 488:
-#line 1361 "csharp.y"
+#line 1368 "csharp.y"
 { R();  unuseNameSpace(); ;
     break;}
 case 489:
-#line 1364 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 490:
-#line 1365 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 491:
-#line 1368 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 492:
 #line 1371 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 493:
-#line 1374 "csharp.y"
+case 490:
+#line 1372 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 494:
+case 491:
 #line 1375 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 495:
+case 492:
 #line 1378 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 496:
-#line 1379 "csharp.y"
+case 493:
+#line 1381 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 497:
+case 494:
 #line 1382 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 498:
-#line 1383 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 499:
-#line 1384 "csharp.y"
-{ R(); /* Do nothing */	;
-    break;}
-case 500:
+case 495:
 #line 1385 "csharp.y"
 { R(); /* Do nothing */	;
     break;}
-case 501:
+case 496:
+#line 1386 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 497:
 #line 1389 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 498:
+#line 1390 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 499:
+#line 1391 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 500:
+#line 1392 "csharp.y"
+{ R(); /* Do nothing */	;
+    break;}
+case 501:
+#line 1396 "csharp.y"
 { R();
 		gCurrentMethod = gCurrentAC->addMethod(
 			yyvsp[-7].attribute,	// Attributes
@@ -4200,7 +4207,7 @@ case 501:
 	;
     break;}
 case 502:
-#line 1399 "csharp.y"
+#line 1406 "csharp.y"
 { R();
 		gCurrentMethod = gCurrentAC->addMethod(
 			yyvsp[-7].attribute,	// Attributes
@@ -4213,223 +4220,223 @@ case 502:
 	;
     break;}
 case 503:
-#line 1411 "csharp.y"
+#line 1418 "csharp.y"
 { R(); yyval.tmpValue = 0; 			;
     break;}
 case 504:
-#line 1412 "csharp.y"
+#line 1419 "csharp.y"
 { R(); yyval.tmpValue = ATTR_NEW; 	;
     break;}
 case 505:
-#line 1418 "csharp.y"
+#line 1425 "csharp.y"
 { R(); gCurrentAC->addProperty(yyvsp[-8].attribute, yyvsp[-7].tmpValue, yyvsp[-6].type, yyvsp[-5].text, yyvsp[-2].accessor);	;
     break;}
 case 506:
-#line 1425 "csharp.y"
+#line 1432 "csharp.y"
 { R(); yyvsp[-2].accessor->setAsIndexer(yyvsp[-9].type, yyvsp[-6].variable); gCurrentAC->addProperty(yyvsp[-11].attribute, yyvsp[-10].tmpValue, yyvsp[-2].accessor);	;
     break;}
 case 507:
-#line 1429 "csharp.y"
+#line 1436 "csharp.y"
 { R(); yyval.accessor = CreateAccessor(CreateAccessor(yyvsp[-2].attribute,NULL), NULL); ;
     break;}
 case 508:
-#line 1430 "csharp.y"
+#line 1437 "csharp.y"
 { R(); yyval.accessor = CreateAccessor(NULL, CreateAccessor(yyvsp[-2].attribute,NULL)); ;
     break;}
 case 509:
-#line 1431 "csharp.y"
+#line 1438 "csharp.y"
 { R(); yyval.accessor = CreateAccessor(CreateAccessor(yyvsp[-5].attribute,NULL), CreateAccessor(yyvsp[-2].attribute,NULL)); ;
     break;}
 case 510:
-#line 1432 "csharp.y"
+#line 1439 "csharp.y"
 { R(); yyval.accessor = CreateAccessor(CreateAccessor(yyvsp[-2].attribute,NULL), CreateAccessor(yyvsp[-5].attribute,NULL)); ;
     break;}
 case 511:
-#line 1435 "csharp.y"
+#line 1442 "csharp.y"
 { R(); compilerError(ERR_NOT_SUPPORTED,"event not supported"); ;
     break;}
 case 512:
-#line 1440 "csharp.y"
+#line 1447 "csharp.y"
 { R(); yyval.statement = NULL;	;
     break;}
 case 513:
-#line 1441 "csharp.y"
+#line 1448 "csharp.y"
 { R(); yyval.statement = NULL;	;
     break;}
 case 514:
-#line 1446 "csharp.y"
+#line 1453 "csharp.y"
 { R();
 		gCurrEnum = CreateEnum(yyvsp[-4].attribute, yyvsp[-3].tmpValue, yyvsp[-1].text, yyvsp[0].type);
   ;
     break;}
 case 515:
-#line 1448 "csharp.y"
+#line 1455 "csharp.y"
 { R();
 	// Do nothing.
   ;
     break;}
 case 516:
-#line 1453 "csharp.y"
+#line 1460 "csharp.y"
 { R(); yyval.type = NULL;    ;
     break;}
 case 517:
-#line 1454 "csharp.y"
+#line 1461 "csharp.y"
 { R(); yyval.type = yyvsp[0].type; ;
     break;}
 case 518:
-#line 1457 "csharp.y"
+#line 1464 "csharp.y"
 { R(); yyval.type = yyvsp[0].type; ;
     break;}
 case 519:
-#line 1460 "csharp.y"
+#line 1467 "csharp.y"
 { R(); /* Do nothing */ ;
     break;}
 case 520:
-#line 1461 "csharp.y"
-{ R(); /* Do nothing */ ;
-    break;}
-case 522:
-#line 1465 "csharp.y"
-{ R(); /* Do nothing */ ;
-    break;}
-case 523:
 #line 1468 "csharp.y"
 { R(); /* Do nothing */ ;
     break;}
+case 522:
+#line 1472 "csharp.y"
+{ R(); /* Do nothing */ ;
+    break;}
+case 523:
+#line 1475 "csharp.y"
+{ R(); /* Do nothing */ ;
+    break;}
 case 524:
-#line 1469 "csharp.y"
+#line 1476 "csharp.y"
 { R(); /* Do nothing */ ;
     break;}
 case 525:
-#line 1472 "csharp.y"
+#line 1479 "csharp.y"
 { R(); gCurrEnum->addEntry(yyvsp[-1].attribute, yyvsp[0].text, NULL); ;
     break;}
 case 526:
-#line 1473 "csharp.y"
+#line 1480 "csharp.y"
 { R(); gCurrEnum->addEntry(yyvsp[-3].attribute, yyvsp[-2].text, yyvsp[0].expr); ;
     break;}
 case 527:
-#line 1479 "csharp.y"
+#line 1486 "csharp.y"
 { R(); CreateDelegate(yyvsp[-9].attribute, yyvsp[-8].tmpValue, yyvsp[-6].type, yyvsp[-5].text, yyvsp[-2].variable)->setGenericParam(); ;
     break;}
 case 528:
-#line 1484 "csharp.y"
+#line 1491 "csharp.y"
 { R(); yyval.attribute = yyvsp[0].attribute; ;
     break;}
 case 529:
-#line 1487 "csharp.y"
+#line 1494 "csharp.y"
 { R(); yyval.attribute = CreateAttributeWithChild(yyvsp[0].attribute); 		;
     break;}
 case 530:
-#line 1488 "csharp.y"
+#line 1495 "csharp.y"
 { R(); yyval.attribute = yyvsp[-1].attribute->addChildAttribute(yyvsp[0].attribute); ;
     break;}
 case 531:
-#line 1492 "csharp.y"
+#line 1499 "csharp.y"
 { R();	yyval.attribute = yyvsp[-2].attribute->setSpecifier(yyvsp[-3].tmpValue); ;
     break;}
 case 532:
-#line 1494 "csharp.y"
+#line 1501 "csharp.y"
 { R();	yyval.attribute = yyvsp[-3].attribute->setSpecifier(yyvsp[-4].tmpValue); ;
     break;}
 case 533:
-#line 1497 "csharp.y"
+#line 1504 "csharp.y"
 { R(); yyval.tmpValue = 0; 					;
     break;}
 case 534:
-#line 1498 "csharp.y"
+#line 1505 "csharp.y"
 { R(); yyval.tmpValue = yyvsp[0].tmpValue; 		;
     break;}
 case 535:
-#line 1501 "csharp.y"
+#line 1508 "csharp.y"
 { R(); yyval.tmpValue = yyvsp[-1].tmpValue; 		;
     break;}
 case 536:
-#line 1504 "csharp.y"
+#line 1511 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_ASSEMBLY ; 	;
     break;}
 case 537:
-#line 1505 "csharp.y"
+#line 1512 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_FIELD;		;
     break;}
 case 538:
-#line 1506 "csharp.y"
+#line 1513 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_EVENT;		;
     break;}
 case 539:
-#line 1507 "csharp.y"
+#line 1514 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_METHOD;		;
     break;}
 case 540:
-#line 1508 "csharp.y"
+#line 1515 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_MODULE;		;
     break;}
 case 541:
-#line 1509 "csharp.y"
+#line 1516 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_PARAM;		;
     break;}
 case 542:
-#line 1510 "csharp.y"
+#line 1517 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_PROPERTY;	;
     break;}
 case 543:
-#line 1511 "csharp.y"
+#line 1518 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_RETURN;		;
     break;}
 case 544:
-#line 1512 "csharp.y"
+#line 1519 "csharp.y"
 { R(); yyval.tmpValue = ATTRB_TYPE;		;
     break;}
 case 545:
-#line 1515 "csharp.y"
+#line 1522 "csharp.y"
 { R(); yyval.attribute = CreateAttribute(yyvsp[0].type, yyvsp[0].expr);				;
     break;}
 case 546:
-#line 1516 "csharp.y"
+#line 1523 "csharp.y"
 { R(); yyval.attribute = yyvsp[-2].attribute->addAttribute(yyvsp[0].type, yyvsp[0].expr); ;
     break;}
 case 547:
-#line 1519 "csharp.y"
+#line 1526 "csharp.y"
 { R(); yyval.type = yyvsp[-1].type; yyval.expr= yyvsp[0].expr; ;
     break;}
 case 548:
-#line 1522 "csharp.y"
+#line 1529 "csharp.y"
 { R(); yyval.expr = NULL; 		;
     break;}
 case 549:
-#line 1523 "csharp.y"
+#line 1530 "csharp.y"
 { R(); yyval.expr = yyvsp[0].expr ; 	;
     break;}
 case 550:
-#line 1526 "csharp.y"
+#line 1533 "csharp.y"
 { R(); yyval.type = yyvsp[0].type; 	;
     break;}
 case 551:
-#line 1529 "csharp.y"
+#line 1536 "csharp.y"
 { R(); yyval.expr = yyvsp[-1].expr ; 	;
     break;}
 case 552:
-#line 1536 "csharp.y"
+#line 1543 "csharp.y"
 { R(); lex_enter_attrib(); 	/*Do nothing*/ ;
     break;}
 case 553:
-#line 1539 "csharp.y"
+#line 1546 "csharp.y"
 { R(); lex_exit_attrib(); 	/*Do nothing*/ ;
     break;}
 case 554:
-#line 1542 "csharp.y"
+#line 1549 "csharp.y"
 { R(); lex_enter_accessor();	/*Do nothing*/ ;
     break;}
 case 555:
-#line 1545 "csharp.y"
+#line 1552 "csharp.y"
 { R(); lex_exit_accessor();	/*Do nothing*/ ;
     break;}
 case 556:
-#line 1548 "csharp.y"
+#line 1555 "csharp.y"
 { R(); lex_enter_getset();	/*Do nothing*/ ;
     break;}
 case 557:
-#line 1551 "csharp.y"
+#line 1558 "csharp.y"
 { R(); lex_exit_getset();	/*Do nothing*/ ;
     break;}
 }
@@ -4630,7 +4637,7 @@ yyerrhandle:
   yystate = yyn;
   goto yynewstate;
 }
-#line 1555 "csharp.y"
+#line 1562 "csharp.y"
 
 
 #include <stdio.h>
@@ -4683,6 +4690,6 @@ void error (const char* msg,...) {
 int uniqueIdCount = 0;
 const char* makeUniqueId(const char* body) {
 	char buf[10];
-	_itoa(uniqueIdCount, buf, 10);
+	_itoa(uniqueIdCount++, buf, 10);
 	return concat3("__", body, buf);
 }

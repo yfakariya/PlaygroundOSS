@@ -1611,6 +1611,6 @@ void error (const char* msg,...) {
 int uniqueIdCount = 0;
 const char* makeUniqueId(const char* body) {
 	char buf[10];
-	_itoa(uniqueIdCount, buf, 10);
+	_itoa(uniqueIdCount++, buf, 10);
 	return concat3("__", body, buf);
 }
