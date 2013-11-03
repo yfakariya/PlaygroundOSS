@@ -737,43 +737,50 @@ foreach_statement
 													CreateStatement(STM_TRY, NULL, NULL)
 													->addChild(
 														CreateStatement(
-															STM_WHILE, 
-															NULL, 
+															STM_BLOCK,
+															NULL,
+															CreateStatement(
+																STM_WHILE, 
+																NULL, 
+																CreateStatement(
+																	STM_BLOCK,
+																	NULL,
+																	CreateVarStatement(
+																		STM_LOCALVAR,
+																		$8.statement, // next
+																		NULL, // child
+																		CreateVarInstance(
+																			$4.text
+																		)->setInitializer(
+																			CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Current")
+																		),
+																		$3.type
+																	)
+																)
+															) -> setExpression(
+																/* enumerator.MoveNext() */
+																CreateDoubleExpr(
+																	EXPR_INVOKE,
+																	CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("MoveNext"),
+																	NULL // no args
+																)->patchSubInvoke()
+															)
+														)
+													) -> addNext (
+														CreateStatement(STM_FINALLY, NULL, NULL)
+														->addChild(
 															CreateStatement(
 																STM_BLOCK,
 																NULL,
-																CreateVarStatement(
-																	STM_LOCALVAR,
-																	$8.statement, // next
-																	NULL, // child
-																	CreateVarInstance(
-																		$4.text
-																	)->setInitializer(
-																		CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Current")
-																	),
-																	$3.type
+																CreateStatement(STM_WRAP_EXP, NULL, NULL) -> setExpression(
+																	/* enumerator.Dispose() */
+																	CreateDoubleExpr(
+																		EXPR_INVOKE,
+																		CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Dispose"),
+																		NULL // no args
+																	)->patchSubInvoke()
 																)
 															)
-														) -> setExpression(
-															/* enumerator.MoveNext() */
-															CreateDoubleExpr(
-																EXPR_INVOKE,
-																CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("MoveNext"),
-																NULL // no args
-															)->patchSubInvoke()
-														)
-													)
-												) -> addNext (
-													CreateStatement(
-														STM_FINALLY, 
-														NULL,
-														CreateStatement(STM_WRAP_EXP, NULL, NULL) -> setExpression(
-															/* enumerator.Dispose() */
-															CreateDoubleExpr(
-																EXPR_INVOKE,
-																CreateSingleExpr(EXPR_DOT, CreateLeafExpr(EXPR_IDENT, enumVar))->setIdentifier("Dispose"),
-																NULL // no args
-															)->patchSubInvoke()
 														)
 													)
 												);
