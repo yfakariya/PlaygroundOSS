@@ -273,6 +273,18 @@ namespace System {
 		template<class T> static void				_valueType_Sort			(Array<T>* _array);
 		template<class T> static void				_valueType_Sort			(Array<T>* _array, s32 index, s32 length);
 
+		template<class T>
+		class Enumerator : public Collections::Generic::IEnumerator<T> {
+		private:
+			T* m_array;
+			u64 m_length;
+			s64 m_nextIndex;
+		public:
+			Enumerator(AbstractArray* theArray);
+			T _acc_gCurrent();
+			bool MoveNext();
+			void Dispose();
+		};
 	};
 
 
@@ -799,8 +811,33 @@ namespace System {
 /*x*/	//static void			Sort					(Array<TKey>* keys, Array<TValue>* items, s32 index, s32 length, IComparer<TKey>* comparer);
 /*x*/	//static bool			TrueForAll				(Array<T>* _array, Predicate<T>* match);
 
+	
+	// -----------------------------------------------------------------------
+	// Enumerator
+	template<class T>
+	AbstractArray::Enumerator<T>::Enumerator(AbstractArray* theArray) {
+		m_nextIndex = -1;
+		m_array = (T*)theArray->m_array;
+		m_length = theArray->m_length;
+	}
 
+	template<class T>
+	T AbstractArray::Enumerator<T>::_acc_gCurrent() {
+		if(m_nextIndex < 0 || m_nextIndex > m_length) {
+			THROW(CS_NEW InvalidOperationException());
+		}
+		return m_array[m_nextIndex];
+	}
 
+	template<class T>
+	bool AbstractArray::Enumerator<T>::MoveNext() {
+		return ((++m_nextIndex) < m_length);
+	}
+
+	template<class T>
+	void AbstractArray::Enumerator<T>::Dispose() {
+		// nop
+	}	
 }
 
 #endif
