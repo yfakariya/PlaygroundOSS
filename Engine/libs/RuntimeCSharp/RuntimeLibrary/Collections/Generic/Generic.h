@@ -28,8 +28,11 @@ namespace Generic {
     {
 	public:
 		virtual bool MoveNext() = 0;
+		inline bool MoveNext$()	        { CHCKTHIS; return MoveNext();      }
 		virtual T _acc_gCurrent() = 0;
+		inline T _acc_gCurrent$()       { CHCKTHIS; return _acc_gCurrent(); }
 		virtual void Dispose() = 0;
+		inline void Dispose$()          { CHCKTHIS; return Dispose();       }
     };
 			
 	template<class T>
