@@ -137,6 +137,7 @@ namespace Generic {
 			s32* m_buckets;
 			Entry* m_entries;
 			Entry* m_currentEntry;
+			static const u32 c_uninitialized = 0xFFFFFFFF;
 		public:
 			Enumerator(Dictionary<TKey,TValue>* dict);
 			KeyValuePair<TKey,TValue>* _acc_gCurrent();
@@ -831,7 +832,7 @@ namespace Generic {
 		m_capacity = dict->m_capacity;
 		m_buckets = dict->m_buckets;
 		m_entries = dict->m_entries;
-		m_currentBucket = -1;
+		m_currentBucket = c_uninitialized;
 		m_currentEntry = NULL;
 	}
 
@@ -846,18 +847,26 @@ namespace Generic {
 
 	template<class TKey, class TValue>
 	bool Dictionary<TKey, TValue>::Enumerator::MoveNext() {
-		while(m_currentBucket < m_capacity) {
+		while(m_currentBucket < m_capacity || m_currentBucket == c_uninitialized) {
 			if(!m_currentEntry || !(m_currentEntry->m_pNext)) {
-				m_currentBucket++;
+				while(true){
+					m_currentBucket++;
 
-				if(m_currentBucket == m_capacity) {
-					// Now ends
-					m_currentEntry = NULL;
-					return false;
+					if(m_currentBucket == m_capacity) {
+						// Now ends
+						m_currentEntry = NULL;
+						return false;
+					}
+
+					if (m_buckets[m_currentBucket] >= 0) {
+						Entry* entry = m_entries + m_buckets[m_currentBucket];
+						if (entry) {
+							// Found
+							m_currentEntry = entry;
+							return true;
+						}
+					}
 				}
-
-				m_currentEntry = m_entries + m_buckets[m_currentBucket];
-				return true;
 			}
 			
 			m_currentEntry = m_currentEntry->m_pNext;
