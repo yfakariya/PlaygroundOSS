@@ -698,14 +698,6 @@ statement_expression_list
   ;
 foreach_statement
   : FOREACH '(' type IDENTIFIER IN expression ')' embedded_statement
-										/*
-										{ R(); $$.statement = CreateStatement(STM_FOREACH, NULL, NULL)
-											->setExpression($6.expr)
-											->addType($3.type)
-											->addChild($8.statement); 
-											compilerError(ERR_NOT_SUPPORTED_YET, "Foreach not supported yet. Please use 'for' with array or list.");
-										}
-										*/
 										{
 											R(); 
 											const char* enumVar = makeUniqueId("enumerator");
