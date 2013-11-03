@@ -23,10 +23,13 @@ namespace System {
 namespace Collections {
 namespace Generic {
     
-    template<class T>
+	template<class T>
     class IEnumerator /*<out T> : System::Collections::IEnumerator*/
     {
-                
+	public:
+		virtual bool MoveNext() = 0;
+		virtual T _acc_gCurrent() = 0;
+		virtual void Dispose() = 0;
     };
 			
 	template<class T>

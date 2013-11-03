@@ -882,6 +882,10 @@ bool String::Equals(String* value) {
 	return (Compare(this, value) == 0);
 }
 
+Collections::Generic::IEnumerator<uniChar>* String::GetEnumerator() {
+	return CS_NEW CharEnumerator(this);
+}
+
 s32 String::GetHashCode() {
 	/*
 	const uniChar* chPtr = this->_getStringBuffer();
@@ -1679,6 +1683,31 @@ String* String::TrimStart(Array<uniChar>* trimChars) {
 }
 
 // --------------------------------------------------------
+// CharEnumerator
+//
+//String::CharEnumerator(String* str) {
+//	m_nextIndex = -1;
+//	m_str = str;
+//}
+//
+//uniChar String::CharEnumerator::_acc_gCurrent() {
+//	if(m_nextIndex < 0 || m_nextIndex > m_str->_acc_gLength) {
+//		THROW(CS_NEW InvalidOperationException());
+//	}
+//	return m_str->_acc_gIndex(m_nextIndex);
+//}
+//
+//bool String::CharEnumerator::MoveNext() {
+//	return ((++m_nextIndex) < m_str->_acc_gLength);
+//}
+//
+//void String::CharEnumerator::Dispose() {
+//	// nop
+//}	
+
+
+
+// --------------------------------------------------------
 
 // --------------------------------------------------------
 // String Builder.
@@ -1919,6 +1948,27 @@ const char* String::_toCStr() {
 	return (intptr) ? (char*)intptr : "";
 }
 
+// --------------------------------------------------------
+// CharEnumerator
+String::CharEnumerator::CharEnumerator(String* str) {
+	m_str = str;
+	m_nextIndex = -1;
+}
+
+uniChar String::CharEnumerator::_acc_gCurrent() {
+	if(m_nextIndex < 0 || m_nextIndex > m_str->m_length) {
+		THROW(CS_NEW InvalidOperationException());
+	}
+	return m_str->_idx_g(m_nextIndex);
+}
+
+bool String::CharEnumerator::MoveNext() {
+	return ((++m_nextIndex) < m_str->m_length);
+}
+
+void String::CharEnumerator::Dispose() {
+	// nop
+}	
 // --------------------------------------------------------
 
 // --------------------------------------------------------

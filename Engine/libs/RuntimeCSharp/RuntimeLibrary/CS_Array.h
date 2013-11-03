@@ -310,6 +310,10 @@ namespace System {
 		}
 		inline T				_idx$_s$				(s32 idx, T item)	{ CHCKTHIS; return _idx$_s(idx, item);				}
 		inline Array<T>*		_s						(s32 idx, T item)	{ _array_refSetValue(idx, item); return this;		}
+		Collections::Generic::IEnumerator<T>*
+		                        GetEnumerator           ();
+		inline Collections::Generic::IEnumerator<T>*
+		                        GetEnumerator$          ()	                { CHCKTHIS; return GetEnumerator();				    }
 
 		Object*					Clone					();
 		inline Object*			Clone$					()					{ CHCKTHIS; return Clone();							}
@@ -557,6 +561,11 @@ namespace System {
 /*x*/	//static s32			FindLastIndex			(Array<T>* _array, s32 startIndex, Predicate<T>* match);
 /*x*/	//static int			FindLastIndex			(Array<T>* _array, s32 startIndex, s32 count, Predicate<T>* match);
 /*x*/	//static void			ForEach					(Array<T>* _array, Action<T> action);
+
+	template<class T>
+	Collections::Generic::IEnumerator<T>* Array<T>::GetEnumerator() {
+		return CS_NEW Enumerator(this);
+	}
 	
 	template<class T>
 	inline s32 AbstractArray::IndexOf(Array<T>* _array, T value) {
