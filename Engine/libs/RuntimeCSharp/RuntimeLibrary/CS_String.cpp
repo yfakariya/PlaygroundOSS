@@ -1683,31 +1683,6 @@ String* String::TrimStart(Array<uniChar>* trimChars) {
 }
 
 // --------------------------------------------------------
-// CharEnumerator
-//
-//String::CharEnumerator(String* str) {
-//	m_nextIndex = -1;
-//	m_str = str;
-//}
-//
-//uniChar String::CharEnumerator::_acc_gCurrent() {
-//	if(m_nextIndex < 0 || m_nextIndex > m_str->_acc_gLength) {
-//		THROW(CS_NEW InvalidOperationException());
-//	}
-//	return m_str->_acc_gIndex(m_nextIndex);
-//}
-//
-//bool String::CharEnumerator::MoveNext() {
-//	return ((++m_nextIndex) < m_str->_acc_gLength);
-//}
-//
-//void String::CharEnumerator::Dispose() {
-//	// nop
-//}	
-
-
-
-// --------------------------------------------------------
 
 // --------------------------------------------------------
 // String Builder.
